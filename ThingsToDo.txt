@@ -1,0 +1,9 @@
+Thêm Database 1 bảng id password
+Thêm LoginMenu.tag (Chỉnh sửa navbar)
+Thêm LoginForm
+Thêm LoginController
+
+
+
+Advanced:
+Chia quyền Visitor chỉ xem, Receptionist có thể thêm Owners
