@@ -59,3 +59,10 @@ CREATE TABLE IF NOT EXISTS visits (
   description VARCHAR(255),
   FOREIGN KEY (pet_id) REFERENCES pets(id)
 ) engine=InnoDB;
+
+CREATE TABLE IF NOT EXISTS `petclinic`.`user` (
+  `UserID` INT(4) UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `Username` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  PRIMARY KEY (`UserID`));
+

@@ -51,3 +51,21 @@ INSERT INTO visits VALUES (1, 7, '2013-01-01', 'rabies shot');
 INSERT INTO visits VALUES (2, 8, '2013-01-02', 'rabies shot');
 INSERT INTO visits VALUES (3, 8, '2013-01-03', 'neutered');
 INSERT INTO visits VALUES (4, 7, '2013-01-04', 'spayed');
+
+INSERT INTO user VALUES (1, 'admin', 'admin');
+INSERT INTO user VALUES (2, 'user', 'user');
+
+INSERT INTO medicine VALUES (1,3, 'Thuoc kim cuong', '420ml');
+INSERT INTO medicine VALUES (2,4, 'Thuoc vuong liem', '69ml');
+
+-- INSERT INTO pets_medicine VALUES (1, 2, '40ml');
+-- INSERT INTO pets_medicine VALUES (2, 1, '50ml');
+-- INSERT INTO pets_medicine VALUES (3, 1, '140ml');
+-- INSERT INTO pets_medicine VALUES (4, 2, '20ml');
+-- INSERT INTO pets_medicine VALUES (5, 1, '70ml');
+-- INSERT INTO pets_medicine VALUES (6, 2, '60ml');
+-- INSERT INTO pets_medicine VALUES (7, 2, '800ml');
+-- INSERT INTO pets_medicine VALUES (8, 1, '69ml');
+-- INSERT INTO pets_medicine VALUES (9, 2, '420ml');
+-- INSERT INTO pets_medicine VALUES (10, 2, '76ml');
+-- INSERT INTO pets_medicine VALUES (4, 1, '96ml');

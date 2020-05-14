@@ -7,7 +7,7 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="<spring:url value="/" htmlEscape="true" />"><span></span></a>
+            <a class="navbar-brand" href="<spring:url value="/welcome.html" htmlEscape="true" />"><span></span></a>
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
                 <span class="sr-only"><os-p>Toggle navigation</os-p></span>
                 <span class="icon-bar"></span>
@@ -37,6 +37,12 @@
                             title="trigger a RuntimeException to see how it is handled">
                     <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
                     <span>Error</span>
+                </petclinic:menuItem>
+
+                <petclinic:menuItem active="${name eq 'logout'}" url="/"
+                                    title="logout">
+                    <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span>
+                    <span>Logout</span>
                 </petclinic:menuItem>
 
             </ul>

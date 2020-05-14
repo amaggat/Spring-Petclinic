@@ -58,8 +58,14 @@ public class Pet extends NamedEntity {
     @JoinColumn(name = "owner_id")
     private Owner owner;
 
+//    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet", fetch = FetchType.EAGER)
+//    private Set<MedicineDosePet> med;
+
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet", fetch = FetchType.EAGER)
     private Set<Visit> visits;
+
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "pet", fetch = FetchType.EAGER)
+    private Set<Medicine> med;
 
 
     public void setBirthDate(LocalDate birthDate) {
@@ -107,5 +113,28 @@ public class Pet extends NamedEntity {
         getVisitsInternal().add(visit);
         visit.setPet(this);
     }
+
+    protected Set<Medicine> getMedInternal() {
+        if (this.med == null) {
+            this.med = new HashSet<>();
+        }
+        return this.med;
+    }
+
+    protected void setMedInternal(Set<Medicine> med) {
+        this.med = med;
+    }
+
+    public List<Medicine> getMed() {
+        List<Medicine> sortedMed = new ArrayList<>(getMedInternal());
+        PropertyComparator.sort(sortedMed, new MutableSortDefinition("alphabet", false, false));
+        return Collections.unmodifiableList(sortedMed);
+    }
+
+    public void addMed(Medicine med) {
+        getMedInternal().add(med);
+        med.setPet(this);
+    }
+
 
 }

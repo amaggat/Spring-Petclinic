@@ -4,6 +4,5 @@ Thêm LoginForm
 Thêm LoginController
 
 
-
 Advanced:
 Chia quyền Visitor chỉ xem, Receptionist có thể thêm Owners
