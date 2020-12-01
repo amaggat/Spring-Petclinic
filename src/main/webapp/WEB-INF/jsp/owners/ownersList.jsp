@@ -12,10 +12,10 @@
         <thead>
         <tr>
             <th scope="col" style="width: 150px;">Name</th>
-            <th scope="col" style="width: 200px;">Address</th>
-            <th scope="col">City</th>
-            <th scope="col" style="width: 120px">Telephone</th>
-            <th scope="col">Pets</th>
+            <th scope="col" style="width: 200px;">Author</th>
+            <th scope="col">Publisher</th>
+            <th scope="col" style="width: 120px">Quantity</th>
+            <th scope="col">Edition</th>
         </tr>
         </thead>
         <tbody>
@@ -25,7 +25,7 @@
                     <spring:url value="/owners/{ownerId}.html" var="ownerUrl">
                         <spring:param name="ownerId" value="${owner.id}"/>
                     </spring:url>
-                    <a href="${fn:escapeXml(ownerUrl)}"><c:out value="${owner.firstName} ${owner.lastName}"/></a>
+                    <a href="${fn:escapeXml(ownerUrl)}"><c:out value="${owner.lastName}"/></a>
                 </td>
                 <td>
                     <c:out value="${owner.address}"/>
@@ -37,9 +37,7 @@
                     <c:out value="${owner.telephone}"/>
                 </td>
                 <td>
-                    <c:forEach var="pet" items="${owner.pets}">
-                        <c:out value="${pet.name} "/>
-                    </c:forEach>
+                    <c:out value="${owner.firstName}"/>
                 </td>
             </tr>
         </c:forEach>
