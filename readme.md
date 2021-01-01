@@ -1,33 +1,4 @@
-# Spring PetClinic Sample Application
-
-[![Build Status](https://travis-ci.org/spring-petclinic/spring-framework-petclinic.svg?branch=master)](https://travis-ci.org/spring-petclinic/spring-framework-petclinic/) 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=alert_status)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
-[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=spring-petclinic_spring-framework-petclinic&metric=coverage)](https://sonarcloud.io/dashboard?id=spring-petclinic_spring-framework-petclinic)
-
-Approved by the Spring team, this repo is a fork of the [spring-projects/spring-petclinic](https://github.com/spring-projects/spring-petclinic).
-It allows the Spring community to maintain a Petclinic version with a plain old **Spring Framework configuration**
-and with a **3-layer architecture** (i.e. presentation --> service --> repository).
-The "canonical" implementation is now based on Spring Boot, Thymeleaf and [aggregate-oriented domain]([https://github.com/spring-projects/spring-petclinic/pull/200). 
-
-
-## Understanding the Spring Petclinic application with a few diagrams
-
-[See the presentation here](http://fr.slideshare.net/AntoineRey/spring-framework-petclinic-sample-application) (2017 update)
-
 ## Running petclinic locally
-
-### With Maven command line
-```
-git clone https://github.com/spring-petclinic/spring-framework-petclinic.git
-cd spring-framework-petclinic
-./mvnw jetty:run-war
-# For Windows : ./mvnw.cmd jetty:run-war
-```
-
-### With Docker
-```
-docker run -p 8080:8080 springcommunity/spring-framework-petclinic
-```
 
 You can then access petclinic here: [http://localhost:8080/](http://localhost:8080/)
 
@@ -108,19 +79,8 @@ The following items should be installed in your system:
 
 ### Steps:
 
-1) On the command line
-```
-git clone https://github.com/spring-petclinic/spring-framework-petclinic.git
-```
 
-2) Inside Eclipse or STS
-```
-File -> Import -> Maven -> Existing Maven project
-```
-Then either build on the command line `./mvnw generate-resources` or using the Eclipse launcher (right click on project and `Run As -> Maven install`) to generate the CSS.
-Configure a Jetty or a Tomcat web container then deploy the `spring-petclinic.war` file.
-
-3) Inside IntelliJ IDEA
+Inside IntelliJ IDEA
 
 In the main menu, select `File > Open` and select the Petclinic [pom.xml](pom.xml). Click on the `Open` button.
 
@@ -131,7 +91,7 @@ Go to the `Run -> Edit Configuration` then configure a Tomcat or a Jetty web con
 Run the application by clicking on the `Run` icon.
 
 
-4) Navigate to Petclinic
+Navigate to Petclinic
 
 Visit [http://localhost:8080](http://localhost:8080) in your browser.
 
