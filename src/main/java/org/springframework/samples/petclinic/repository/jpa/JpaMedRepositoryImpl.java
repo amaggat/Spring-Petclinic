@@ -1,7 +1,6 @@
 package org.springframework.samples.petclinic.repository.jpa;
 
 import org.springframework.samples.petclinic.model.Medicine;
-import org.springframework.samples.petclinic.model.Visit;
 import org.springframework.samples.petclinic.repository.MedicineRepository;
 import org.springframework.stereotype.Repository;
 
